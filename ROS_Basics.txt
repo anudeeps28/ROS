@@ -1,0 +1,31 @@
+# ROS - Robotics Operating System
+# Open Source Framework, good community, has tools, libraries and more
+# a lot of downloadable libraries are also presnet
+# if you want to focus on Commputer Vision, you can download for movement and start using it while you develop your Computer Vision library.
+# if you need something and don't want todevelop it yourself, search for it. It might already exist for ROS
+# ROS - framework, not a programming language. Languages used with it - python and C++
+# when you face errors, try to search the internet before 
+
+# ROS installation 
+    # - ubuntu is ideal
+
+# How to set up a project in ROS    
+    # create a workspace where we are going to store our projects
+    # mkdir -p tutorials/src
+    # cd tutorials/
+    # catkin_make
+        # this will make devel and build: these are tools that will help us
+    # you shuld now have src, devel and build
+    # cd src
+    # creating a package
+        # every ROS project = smallest buildstone of a project
+        # every ROS project = molecule, every atam in that molecule is that package
+        # ROS package can contain configuration files, libraries, data sets and etc. or nodes etc.
+        # catkin_create_pkg Name_of_your_package rospy std_msgs
+        # cd Name_of_your_package
+            # you will have CMakeLists (directives and instructions of source files) and package.xml (it contains some metadata for our package)
+        # open package.xml in nvim or other editor
+
+
+
+        

@@ -1,0 +1,31 @@
+#roscore
+    # collection of nodes and programs having the strucure of ros
+    # command for starting it
+    # has all the information of nodes, their connection, ip addresses
+    # it also knows who publishes and subscribes to who, and which topics are available 
+    # roscore always needs to run when we start a new project
+    # you can only have one roscore runing at a time
+
+# nodes
+    # a single executable file which performs a task (like publishing data from a sensor
+    # building a map of incoming data or finding a shortest distance from points)
+    # It is the nodes in which we will be writing most of our code
+    # It needs to collect data from another node, and send out data to another node
+        # this can be done through service and topics
+
+# topics
+    # used to communicate between ROS nodes ( a ROS node can either 
+    # subscribe or publish to a topic)
+    # A topic can only have 1 publisher, but it can have many or infinite subscribers.   
+    # it is a one-way communication
+    # publisher sends information to the topic, whiile subscriber recieves information from the topic
+    # there can be many subscribers
+    # since it is a one way communication, if a subscriber wants to talk to the publisher, there
+    # needs to be a new topic via which subscriber publishes talks to publisher subscribes to that
+
+# messages
+    # describes what content is published at a specific topic
+    # example: a node whith publishes precision might publish a x,y,z inside the message to the topic
+    # while a mapping node publishes a map inside the publish
+    # we use map to describe a message inside the topic  
+
