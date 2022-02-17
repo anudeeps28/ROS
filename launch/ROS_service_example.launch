@@ -1,0 +1,24 @@
+# launch files are there to start/run nodes in a better way
+# rather than opening up multiple terminals, we can start different nodes easily
+
+# this file uses xml language (just like html language)
+
+<launch>
+    <node pkg="lab_1_pkg" type="service_server_node.py" name = "service_server_node" output="screen "></node> # so now when we run
+    # this launch file, we will actually start this server node
+    
+    # similarly starting the client node
+    <node pkg="lab_1_pkg" type="service_client_node.py" name = "service_client_node" output="screen "></node>
+
+</launch>
+
+
+# whenever we create a new node, it is non-executable
+# to make them executable, go to scripts (where all the nodes are present), and then write
+    # chmod +x service_server_node.py
+    # chmod +x servoce_client_node.py
+# then go back to the catkin folder
+# source devel/setup.bash
+# roulaunch lab_1_pkg (or can even write aut_sys_ws) runcar.launch
+
+
