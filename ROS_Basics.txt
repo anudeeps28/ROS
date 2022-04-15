@@ -40,7 +40,9 @@ source devel/setup.bash  (this will not work for each terminal by default, so we
             CMakeLists = how to compile other package
             Package.xml = contains information about the package
 
+    Also, don't forget source devel/setup.bash
     After writing all the files in src, you can compile the package by catkin_make in catkin_ws 
+    
 
 
 

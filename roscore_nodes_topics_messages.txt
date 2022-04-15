@@ -5,13 +5,17 @@
     # it also knows who publishes and subscribes to who, and which topics are available 
     # roscore always needs to run when we start a new project
     # you can only have one roscore runing at a time
+    # debug when the terminal shows "unable to connect with the master" 
 
 # nodes
+    # publishes to a topic and subscribes to a topic
     # a single executable file which performs a task (like publishing data from a sensor
     # building a map of incoming data or finding a shortest distance from points)
     # It is the nodes in which we will be writing most of our code
     # It needs to collect data from another node, and send out data to another node
         # this can be done through service and topics
+    rosnode list - gives a list of all nodes
+    rosnode info /name_of_node - gives information about that node
 
 # topics
     # used to communicate between ROS nodes ( a ROS node can either 
@@ -29,3 +33,10 @@
     # while a mapping node publishes a map inside the publish
     # we use map to describe a message inside the topic  
 
+# what is rosrun (rosrun <name of package> <executable in the package>)
+    finds the package and tries to run an executable in that package (run a node inside a package)
+    (otherwise we need to go into the package and into the folder of that executable file to run it ./executable)
+
+# Difference between rosrun and roslaunch?
+    if you want to run 2/more files at the same time, you can name all them in the launch file and run them
+    

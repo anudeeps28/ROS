@@ -6,6 +6,7 @@
 
 #!/user/bin/env
 
+from imaplib import _CommandResults
 import rospy
 from std_msgs.msg import String
 from package_name import Position
@@ -34,7 +35,7 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 
-# then go in CmakeLists and add a function catkin_install_python (PROGRAMA scripts/publisher_node.py
+# then go in CmakeLists and add a function catkin_install_python (PROGRAMS scripts/publisher_node.py
 # DESTINATION $(CATKIN_PACKAGE_BIN_DESTINATION)
 # ) and save this
 # then do catkin_make 
@@ -50,3 +51,7 @@ if __name__ == '__main__':
 # rostopic echo /talking_topic: you will get the message published every second
 
 # if the file is not executable, then you need to do chmod +x catkin_ws/src/node.py   
+
+# What is roscore
+    makes the ros system ready to accept commands and give commands
+    debug when says "Unable to connect with the master"
