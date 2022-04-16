@@ -1,0 +1,38 @@
+All of theory and concepts are in my notes app.
+https://roamresearch.com/#/app/anudeep_2806/page/YYSs6kAvo
+
+ 
+ ROS installation 
+     - ubuntu is ideal
+
+Workspaces have 3 folders: build, devel and src (src being where all packages are created and are present).
+catkin installer will normally come with ros
+
+mkdir -p catkin_ws/src
+cd catkin_ws
+catkin_make 
+source devel/setup.bash  (this will not work for each terminal by default, so we need to put this in the bashrc file)
+    this can be done by using echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+ How to set up a package in ROS    
+     create a workspace where we are going to store our projects
+     mkdir -p tutorials/src
+     cd tutorials/
+     catkin_make
+         this will make devel and build: these are tools that will help us
+     you shuld now have src, devel and build
+     cd src
+     creating a package
+         every ROS package = smallest buildstone of a project
+         every ROS package = molecule, every atam in that molecule is that package
+         ROS package can contain configuration files, libraries, data sets and etc. or nodes etc.
+         catkin_create_pkg Name_of_your_package rospy std_msgs
+            example = catkin_create_pkg tutorials rospy std_msgs or roscpp 
+         
+
+    
+    
+
+
+
+        
